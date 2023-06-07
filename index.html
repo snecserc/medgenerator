@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>MedGenerator!</title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style type="text/css">
+    	.inline{
+    		display: initial;
+    		width: auto;
+    		border: none;
+    		border-bottom: 1.5pt dotted;
+    		border-radius: 0px;
+    		padding: 0;
+    		text-align: center;
+    	}
+    	.label-title{
+    		font-weight: bold;
+    	}
+    	#row1 input[type=text]{	width: 85px; }
+    	#row2 input[type=text]{	width: 621px; }
+    	#row3 input[type=text]{	width: 81px; }
+    	#row4 input[type=text]{	width: 96px; }
+    	#row5 input[type=text]{	width: 96px; }
+    	#row5 input[type=text]:last-child{	width: 353px; }
+    	#row6 input[type=text]{	width: 217px; }
+    	#icter-alimentatie input[type=text]{
+    		width: 50px;
+    	}
+    	form{
+    		font-family: 'Times New Roman';
+    		width: 874px;
+    	}
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h3 class="text-primary">
+				Scrisoare Medicala
+			</h3>
+
+			<form role="form" class="form">
+				<div class="form-group">
+					<label for="motiviveleinternarii">
+						Motivele internarii:
+					</label>
+					<textarea class="form-control" id="motiveleinternarii" name="motiveleinternarii"></textarea>
+				</div>
+
+				<div class="form-group">
+					<label for="ahc">
+						AHC:
+					</label>
+					<input type="text" class="form-control inline" style="width: calc(100% - 43px);" id="ahc" name="ahc">
+				</div>
+
+				<div class="form-group">
+					<label class="label-title">Evolutia sarcinii:</label>
+				  <input class="" type="radio" name="evolutia-sarcinii" id="fiziologica" checked>
+				  <label class="" for="fiziologica">
+				    fiziologica
+				  </label>
+				<label>/</label>
+				  <input class="" type="radio" name="evolutia-sarcinii" id="patologica" >
+				  <label class="" for="patologica">
+				    patologica
+				  </label>
+				  <input type="text" class="inline form-control"  style="width: calc(100% - 307px);" id="sarcina-patologica">
+				</div>
+				
+				<div class="form-group">
+					<label class="label-title">Controale prenatale:</label>
+				  <input class="" type="radio" name="controale" id="periodice" checked>
+				  <label class="" for="periodice">
+				    periodice
+				  </label>
+				<label>/</label>
+				  <input class="" type="radio" name="controale" id="sporadice" >
+				  <label class="" for="sporadice">
+				    sporadice.
+				  </label>
+				  <!-- LN -->
+				  <label class="label-title">Locul nasterii:</label>
+				  <input class="" type="radio" name="loc-nastere" id="acasa" checked>
+				  <label class="" for="acasa">
+				    acasa
+				  </label>
+				<label>/</label>
+				  <input class="" type="radio" name="loc-nastere" id="spital" >
+				  <label class="" for="spital">
+				    spital
+				  </label>
+				  <input type="text" class="inline form-control"  style="width: calc(100% - 546px);" id="loc-nastere">
+				</div>
+
+				<div class="form-group short" id="row1">
+					<label class="label-title">A.P.F.:</label>
+				  <label for="app">
+						al catelea copil
+					</label>
+					<input type="text" class="form-control inline" id="nr-copil" required>
+					<label for="app">
+						Nascut la
+					</label>
+					<input type="text" class="form-control inline" id="varsta-gestationala" required>
+					<label for="app">
+						sapt., cu G =
+					</label>
+					<input type="text" class="form-control inline" id="greutate-nastere" required>
+					<label for="app">
+						g, Talia=
+					</label>
+					<input type="text" class="form-control inline" id="talie-nastere" required>
+					<label for="app">
+						cm, Apgar
+					</label>
+					<input type="text" class="form-control inline" id="apgar">
+				</div>
+
+				<div class="form-group" id="row2">
+					<label class="label-title">NASTERE:</label>
+				  <input class="" type="radio" name="nastere" id="spontana" checked>
+				  <label class="" for="spontana">
+				    spontana
+				  </label>
+				<label>/</label>
+				  <input class="" type="radio" name="nastere" id="cezariana" >
+				  <label class="" for="cezariana">
+				    cezariana
+				  </label>
+				  <input type="text" class="inline form-control" id="cezariana-motiv">
+				</div>
+
+				<div class="form-group short" id="row3">
+					<label class="label-title">Icter nou-nascut:</label>
+				  <input class="" type="radio" name="icter" id="icter-nu" checked>
+				  <label class="" for="icter-nu">
+				    Nu
+				  </label>
+				<label>/</label>
+				  <input class="" type="radio" name="icter" id="icter-da" >
+				  <label class="" for="icter-da">
+				    Da
+				  </label>
+				  <input type="text" class="inline form-control" id="icter-zile">
+				  <label class="">zile; fototerapie </label>
+				  <input class="" type="radio" name="fototerapie" id="fototerapie-nu" checked>
+				  <label class="" for="fototerapie-nu">
+				    Nu
+				  </label>
+				<label>/</label>
+				  <input class="" type="radio" name="fototerapie" id="fototerapie-da" >
+				  <label class="" for="fototerapie-da">
+				    Da
+				  </label>
+				  <input type="text" class="inline form-control" id="fototerapie-zile">
+				  <label class="">zile. Alimentat: exclusiv san</label>
+				  <input type="text" class="inline form-control" id="exclusiv-san">
+				  <label>luni,</label>
+				</div>
+
+				<div class="form-group short" id="row4">
+				  <label for="app">
+						mixt de la
+					</label>
+					<input type="text" class="form-control inline" id="alimentat-mixt">
+					<label for="app">
+						luni cu
+					</label>
+					<input type="text" class="form-control inline" id="mixt-cu">
+					<label for="app">
+						; artificial de la
+					</label>
+					<input type="text" class="form-control inline" id="alimentat-artificial">
+					<label for="app">
+						luni cu
+					</label>
+					<input type="text" class="form-control inline" id="artificial-cu">
+					<label for="app">
+						; intarcat la
+					</label>
+					<input type="text" class="form-control inline" id="ablactare">
+					<label for="app">
+						luni;
+					</label>
+				</div>
+
+				<div class="form-group short" id="row5">
+				  <label for="app">
+						diversificat la
+					</label>
+					<input type="text" class="form-control inline" id="diversificare">
+					<label for="app">
+						luni;
+					</label>
+					<input class="" type="radio" name="diversificat-cum" id="diversificat-corect" checked>
+				  <label class="" for="diversificat-corect">
+				    corect
+				  </label>
+				<label>/</label>
+				  <input class="" type="radio" name="diversificat-cum" id="diversificat-incorect" >
+				  <label class="" for="diversificat-incorect">
+				    incorect.
+				  </label>
+
+					<label for="app">
+						In prezent alimentat cu
+					</label>
+					<input type="text" class="form-control inline" id="alimentatie-prezenta">
+				</div>
+
+				<div class="form-group short" id="row6">
+				  <label for="app">
+						Vit D:
+					</label>
+					<input class="" type="radio" name="vit-D" id="vitD-Da" checked>
+				  <label class="" for="vitD-Da">
+				    Da, corect
+				  </label>
+				<label>/</label>
+				  <input class="" type="radio" name="vit-D" id="vitD-Nu" >
+				  <label class="" for="vitD-Nu">
+				    Nu:
+				  </label>
+					<input type="text" class="form-control inline" id="app">
+					<label for="app">
+						Vaccinat conform BMS:
+					</label>
+					<input class="" type="radio" name="Vaccinat" id="Vaccinat-Nu" >
+				  <label class="" for="Vaccinat-Nu">
+				    Nu
+				  </label>
+				  <input type="text" class="form-control inline" id="nevaccinat-motiv">
+					<label>/</label>
+				  <input class="" type="radio" name="Vaccinat" id="Vaccinat-Da" checked>
+				  <label class="" for="Vaccinat-Da">
+				    Da.
+				  </label>
+				  <label for="app">
+						Vaccinari suplimentare:
+					</label>
+					<input class="" type="radio" name="Vaccinatplus" id="Vaccinatplus-Nu" checked>
+				  <label class="" for="Vaccinatplus-Nu">
+				    Nu
+				  </label>
+					<label>/</label>
+				  <input class="" type="radio" name="Vaccinatplus" id="Vaccinatplus-Da" >
+				  <label class="" for="Vaccinatplus-Da">
+				    Da:
+				  </label>
+				  <input type="text" class="form-control inline" id="vaccinuri-suplimentare">
+				</div>
+				<div class="form-group">
+					<label for="ahc">
+						APP:
+					</label>
+					<input type="text" class="form-control inline" style="width: calc(100% - 43px);" id="ahc" name="ahc">
+				</div>
+
+
+
+				<button type="button" class="btn btn-primary" onclick="generate();">
+					Submit
+				</button>
+				<p id="show"></p>
+			</form>
+		</div>
+	</div>
+</div>
+
+    
+    <script type="text/javascript">
+    	function generate(){
+    		console.log("TEXT");
+    		var ScrisoareMedicala = "";
+    		ScrisoareMedicala += "MOTIVELE INTERNARII: " + getElID("motiveleinternarii").value;
+    		ScrisoareMedicala += "\nAHC: " + getElID("ahc").value;
+    		ScrisoareMedicala += "\nAPF: Este " + getChildNumber(getElID("nr-copil").value) + " copil ";
+    		ScrisoareMedicala += "provenit din sarcina cu evolutie " + getGestationEvolution() + ", ";
+    		ScrisoareMedicala += "nastere " + getBirthWay() + " la " + getElID("varsta-gestationala").value + " sapt. ";
+    		ScrisoareMedicala += "cu G = " + getElID("greutate-nastere").value + "g, T = "+getElID("talie-nastere").value+"cm, Apgar = "+getElID("apgar").value + ", ";
+    		ScrisoareMedicala +=  getAlimentation();
+    		ScrisoareMedicala +=  getVaccinationStatus();
+    		ScrisoareMedicala +=  ", profilaxia rahitismului" + (getElID("vitD-Da").checked ? " efectuata corespunzator." : "neefectuata");
+
+
+    		getElID("show").innerText = ScrisoareMedicala;
+    		return false;
+    	}
+    	function getVaccinationStatus() {
+    		var statusVaccinal = getElID("Vaccinat-Da").checked ? "vaccinat conform BMS" : getElID("nevaccinat-motiv").value;
+    		statusVaccinal += getElID("Vaccinatplus-Da").checked ? ", vaccinat suplimentar cu " + getElID("vaccinuri-suplimentare").value : ""
+    		return statusVaccinal
+    	}
+    	function getAlimentation() {
+    		var alimentation = "alimentat ";
+    		var alimNaturala = getElID("exclusiv-san").value;
+    		var alimMixt = getElID("alimentat-mixt").value;
+    		var alimArtificial = getElID("alimentat-artificial").value;
+    		var diversificat = getElID("diversificare").value;
+    		var alimPrezenta = getElID("alimentatie-prezenta").value;
+    		if(alimNaturala != ""){
+    			alimentation += "natural " + alimNaturala + " luni, "
+    		}
+    		if(alimMixt != ""){
+    			alimentation += "mixt de la " + alimMixt + " luni cu " + getElID("mixt-cu").value + ", "
+    		}
+    		if(alimArtificial != ""){
+    			alimentation += "artificial de la " + alimArtificial + " luni cu " + getElID("artificial-cu").value + ", "
+    		}
+    		if(diversificat != ""){
+    			var correct = getElID("diversificat-corect").checked ? "corect" : "incorect"
+    			alimentation += "diversificat " +correct+ " la " + diversificat + " luni, "
+    		}
+    		if(alimPrezenta != ""){
+    			alimentation += "in prezent alimentat cu " + alimPrezenta + ", "
+
+    		}
+    		return (alimentation == "alimentat ") ? "" : alimentation
+    	}
+    	function getElID(id){
+    		return document.getElementById(id);
+    	}
+    	function getChildNumber(child){
+    		if(child == "primul" || child == 1 || child == "I"){
+    			return "primul"
+    		}else{
+    			return "al "+child+"-lea"
+    		}
+    	}
+    	function getGestationEvolution(){
+    		if(getElID("fiziologica").checked){
+    			return "fiziologica"
+    		}else{
+    			return "patologica ("+getElID("sarcina-patologica").value+")"
+    		}
+    	}
+    	function getBirthWay(){
+    		if(getElID("spontana").checked){
+    			return "naturala"
+    		}else{
+    			return "prin sectiune cezariana ("+getElID("cezariana-motiv").value+")"
+    		}
+    	}
+    </script>
+    <script src="js/jquery.min.js"></script>
+    <!--<script src="js/bootstrap.min.js"></script>-->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
